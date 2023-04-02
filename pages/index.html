@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just blog</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            color: #FFF;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: rgb(92, 91, 91);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            background: black;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 35px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            font-size: 35px;
+        }
+
+        li:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+    </style>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/posts">Посты</a></li>
+                <li><a href="/add-post">Создать пост</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <h1>Главная страница просто блога</h1>
+        </div>
+    </div>
+</body>
+
+</html>

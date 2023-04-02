@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            color: #FFF;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: rgb(92, 91, 91);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            background: black;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 35px;
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+        nav>ul>li {
+            font-size: 35px;
+        }
+
+        nav>ul>li:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        .wrapper>article {
+            margin: 10px;
+            padding: 10px;
+            background: black;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .wrapper p {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 300;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        .reactions {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .reactions>li {
+            font-size: 22px;
+        }
+
+        .reactions>li:not(:last-child) {
+            margin-right: 10px;
+        }
+    </style>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/posts">Посты</a></li>
+                <li><a href="/add-post">Создать пост</a></li>
+            </ul>
+        </nav>
+        <h1>Все посты:</h1>
+        <article>
+            <div class="info">
+                <span class="date">01.01.2000</span>
+                <span class="author">J.</span>
+            </div>
+            <h2>Название поста</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, earum inventore! Libero
+                atque perferendis deleniti, ullam fuga cupiditate sed, porro laborum tempore reiciendis officia
+                facere distinctio repudiandae ratione laboriosam optio? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Fugit, sed ex? Impedit, obcaecati voluptatem eligendi laboriosam provident
+                cumque ipsa officia blanditiis recusandae fugiat ex iusto numquam repellat aliquam non aperiam
+                quisquam! Autem, quibusdam? Libero similique fugit, quos reprehenderit dignissimos iste
+                laboriosam vitae quo dolor eius velit quaerat dicta veniam odio. Accusamus inventore velit,
+                suscipit est laboriosam reiciendis pariatur similique molestiae rerum itaque magni enim esse
+                praesentium, ab laudantium voluptates ad voluptate. Nesciunt natus labore error cupiditate, quas
+                quis sequi eligendi voluptates saepe adipisci illum odio commodi. Autem natus dignissimos sit
+                quasi accusamus. Tempora, soluta totam eligendi minima sapiente ipsa laboriosam! </p>
+            <ul class="reactions">
+                <li class="likes">
+                    <span>0</span>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </li>
+                <li class="dislikes">
+                    <span>0</span>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                </li>
+                <li class="comments">
+                    <span>0</span>
+                    <i class="fa-solid fa-comment"></i>
+                </li>
+            </ul>
+        </article>
+
+    </div>
+    <script src="https://kit.fontawesome.com/1d10fc3313.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

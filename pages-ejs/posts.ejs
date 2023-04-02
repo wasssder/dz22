@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts</title>
+    <link rel="stylesheet" href="posts.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <%- include('./partials/menu.ejs') %>
+            <h1>Все посты:</h1>
+            <ul>
+                <li>
+                    <article>
+                        <h2>
+                            <a href="/posts/1">Название поста</a>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, earum inventore! Libero
+                            atque perferendis deleniti, ullam fuga cupiditate sed, porro laborum tempore reiciendis
+                            officia
+                            facere distinctio repudiandae ratione laboriosam optio?</p>
+                        <div class="info">
+                            <span class="date">01.01.2000</span>
+                            <span class="author">J.</span>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+    </div>
+</body>
+
+</html>

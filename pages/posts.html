@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            color: #FFF;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: rgb(92, 91, 91);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            background: black;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 35px;
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+        nav>ul>li {
+            font-size: 35px;
+        }
+
+        nav>ul>li:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        .wrapper>ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper>ul>li {
+            margin: 10px;
+            background: #000;
+        }
+
+        .wrapper>ul>li>article {
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .wrapper p {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 300;
+            font-size: 22px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+    </style>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/posts">Посты</a></li>
+                <li><a href="/add-post">Создать пост</a></li>
+            </ul>
+        </nav>
+        <h1>Все посты:</h1>
+        <ul>
+            <li>
+                <article>
+                    <h2>
+                        <a href="/posts/1">Название поста</a>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, earum inventore! Libero
+                        atque perferendis deleniti, ullam fuga cupiditate sed, porro laborum tempore reiciendis officia
+                        facere distinctio repudiandae ratione laboriosam optio?</p>
+                    <div class="info">
+                        <span class="date">01.01.2000</span>
+                        <span class="author">J.</span>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+
+        * {
+            color: #FFF;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            background: rgb(40, 50, 114);
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            background: black;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 35px;
+        }
+        nav>ul {
+            display: flex;
+        }
+        nav>ul>li {
+            font-size: 35px;
+        }
+        nav>ul>li:not(:last-child) {
+            margin-right: 35px;
+        }
+        .wrapper>ul {
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper>ul>li {
+            margin: 10px;
+            background: #000;
+        }
+        .wrapper>ul>li>article {
+            padding: 10px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        .wrapper p {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 300;
+            font-size: 22px;
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 55px;
+        }
