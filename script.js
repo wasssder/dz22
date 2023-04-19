@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
-
 const server = express()
 server.set('view engine', 'ejs')
+server.use(express.static('./pages-ejs/styles'))
 
 const PORT = 3000
 
